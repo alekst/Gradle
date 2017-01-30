@@ -1,10 +1,11 @@
 apply plugin: 'java'
 apply plugin: 'application'
-mainClassName = "laboon.Fibonacci"
+mainClassName = "laboon.Exercise"
 
 run {
 	systemProperties System.getProperties()
-	args System.getProperty("args").split()
+	if (System.getProperty("args") != null)
+		args System.getProperty("args").split()
 }
 
 repositories {
