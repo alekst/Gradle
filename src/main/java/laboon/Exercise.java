@@ -9,7 +9,7 @@ public class Exercise
 		} 
 		else 
 		{
-			return triangle(num) + triangle(num -1);
+			return triangle(num -1) + triangle(num -2);
 		}
 	}
 	
